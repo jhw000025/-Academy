@@ -9,8 +9,6 @@
 	Hello world!  
 </h1>
 
-
-
 <P>  hello dh!! </P>
 </body>
 </html>
