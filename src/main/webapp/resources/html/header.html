@@ -15,22 +15,23 @@
 .search-main input {
 	
 	position: absolute;
-	width: 550px;
-	height: 38px;
-	margin-left: 5px;
-	margin-top : 35px;
+	width : 50%;
 	padding: 5px 35px 5px 15px;
 	border: 3px solid #ffd662;
 	border-radius: 18px;
 	font-size: 15px;
 }
+
 .btn {
 	position: absolute;
-	margin-left: 505px;
-	margin-top : 35px;
+	height : 100%;
 }
 
 .search-main input:focus {
+	outline : none;
+}
+
+.search-main .btn:focus {
 	outline : none;
 }
 /*
@@ -44,15 +45,15 @@
 <header>
 	<div class="container-fluid">
 		<div class="row">
-			<div id="logo">
-				<a href="#" alt="logo"><img src="img/MainLogo.png" width=400 align="left"/>
+			<div id="logo" class = "col-sm-3 h-100 d-flex">
+				<a href="#" alt="logo" class = "align-self-center"><img src="img/MainLogo.png" width="100%" align="left"/>
 				</a>
 			</div>
-			<div class="search-main">
-				<form action="#" method = "get">
-					<div class = "searchBox">
-						<input type="search" placeholder="통합검색" name="search" class="form-control">
-						<button type="submit" class="btn"><i class='fas fa-search'></i></button>
+			<div class="search-main col-sm-9">
+				<form action="#" method = "get" class = "h-100">
+					<div class = "searchBox d-flex" style = "height : 100%">
+						<input type="search" placeholder="통합검색" name="search" style = "height : 35%; width : 60% " class="form-control align-self-center">
+						<button type="submit" class="btn align-self-center" style = " margin-left : 56%; height : 100%;" class="align-self-center"><i class='fas fa-search' style = "margin : auto 0;"></i></button>
 					</div>
 				</form>
 			</div>
