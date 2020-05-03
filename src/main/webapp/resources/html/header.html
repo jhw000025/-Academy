@@ -16,7 +16,6 @@
 	
 	position: absolute;
 	width : 50%;
-	padding: 5px 35px 5px 15px;
 	border: 3px solid #ffd662;
 	border-radius: 18px;
 	font-size: 15px;
@@ -46,18 +45,24 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div id="logo" class = "col-sm-3 h-100 d-flex">
+			<!-- h-100은 높이 100%라는 뜻이고 d-flex는 레이아웃 처리하기 위해 사용 -->
 				<a href="#" alt="logo" class = "align-self-center"><img src="img/MainLogo.png" width="100%" align="left"/>
+				<!-- align-self-center는 마진을 사용하지 않고 정가운데 배치하기 위해 사용(수직 가운데 정렬) -->
 				</a>
 			</div>
-			<div class="search-main col-sm-9">
+			<div class="search-main col-sm-6">
 				<form action="#" method = "get" class = "h-100">
 					<div class = "searchBox d-flex" style = "height : 100%">
-						<input type="search" placeholder="통합검색" name="search" style = "height : 35%; width : 60% " class="form-control align-self-center">
-						<button type="submit" class="btn align-self-center" style = " margin-left : 56%; height : 100%;" class="align-self-center"><i class='fas fa-search' style = "margin : auto 0;"></i></button>
+						<input type="search" placeholder="통합검색" name="search" style = "height : 35%; width : 75% " class="form-control align-self-center">
+						<!-- 가로, 세로는 %를 사용하면 반응형 처리를 할수 있다. -->
+						<button type="submit" class="btn align-self-center" style = " margin-left : 70%; height : 100%;" class="align-self-center"><i class='fas fa-search'></i></button>
+						<!-- margin-left는 %를 사용하면 반응형으로 처리 가능하다. -->
 					</div>
 				</form>
 			</div>
-		
+			<div class = "col-sm-3">
+				
+			</div>
 		</div>
 	</div>
 </header>
